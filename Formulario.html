@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes - Empresa de Indumentaria</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Clientes</h1>
+    </header>
+
+    <main>
+        <form action="/Datos" method="post">
+           <fieldset>
+                <h3>Información Personal</h3>
+                <label class="required" for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label class="required" for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                <label class="required" for="dni">DNI:</label>
+                <input type="number" id="dni" name="dni" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+            </fieldset>
+
+           <fieldset>
+                <h3>Redes Sociales</h3>
+                <label for="usuario_x">Usuario de X:</label>
+                <input type="text" name="usuario_x" id="usuario_x">
+
+                <label for="usuario_instagram">Usuario de Instagram:</label>
+                <input type="text" id="usuario_instagram" name="usuario_instagram">
+           </fieldset>
+
+           <fieldset>
+                <h3>Ubicación</h3>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="ciudad" name="ciudad">
+           </fieldset>
+            
+           <fieldset>
+                <h3>Preferencias de Indumentaria</h3>
+                <label>¿Qué tipo de ropa prefieres?</label>
+
+                <input type="checkbox" id="deportivo" name="preferencias" value="deportivo">
+                <label for="deportivo">Deportivo</label>
+
+                <input type="checkbox" id="casual" name="preferencias" value="casual">
+                <label for="casual">Casual</label>
+
+                <input type="checkbox" id="formal" name="preferencias" value="formal">
+                <label for="formal">Formal</label>
+           </fieldset>
+
+           <button type="submit">Registrarse</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Indumentaria. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
